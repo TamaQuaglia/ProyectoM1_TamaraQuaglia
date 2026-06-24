@@ -69,6 +69,7 @@ nav {
     display: flex;
     gap: 20px;
     list-style: none;
+    flex-direction: row;
 }
 
 .nav__link {
@@ -96,9 +97,10 @@ main {
 }
 
 .controles {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
-    height: 7rem;
+    height: auto;
     align-items: center;
     
 }
@@ -270,4 +272,80 @@ footer {
     background-color: hsl(168, 69%, 90%);
     padding: 1rem;
     
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .nav__links {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .controles {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Galeria_guardada {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav__logo {
+    font-size: 1.1rem;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .generar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .controles__campo {
+    width: 100%;
+  }
+
+  .select {
+    width: 100%;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .Galeria_guardada {
+    grid-template-columns: 1fr;
+  }
+
+  .caja-fav {
+    width: 100%;
+  }
+
+  .control_pegado {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputPegado {
+    width: 100%;
+  }
 }
