@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+
+        <title>ProyectoM1_Tamara Quaglia</title>
+    </head>
+    <body >
+        <header>
+            <nav class="navbar">
+                <span class="nav__logo">COLORFLY STUDIO 🌈</span>
+                    <ul class="nav__links">
+                    <li><a class="nav__link" href="#generar">Generador</a></li>
+                    <li><a class="nav__link" href="#Galeria_guardada">Guardadas</a></li>
+                    </ul>
+            </nav>
+        </header>
+
+        <!-- Seccion de botoneras principales -->
+        <main >
+            <h1 >  Generador de paletas  </h1>
+            <p> crea tus propios colores aleatoriamente</p>
+
+            <div class ="controles" id="controles"> 
+                <button class="generar" id="generar"> ╰┈➤ˎˊ˗ Descubri tus colores </button>
+                <div class = "controles__campo" id="controles__campo">
+                    <label class= "controles__label" id="controles__label" for="cantidad">Selecciona Cantidad </label>
+                    <select class = "select" id="cantidad"> 
+                    <option value="6"> 6 colores </option>
+                    <option value="8"> 8 colores </option>
+                    <option value="9"> 9 colores </option>
+                    </select>
+                </div>
+            </div>
+
+        <section class="galeria" id="galeria"> </section>   <!--Galeria de paletas aleatorias-->  
+
+            <!-- Paleta de colores favoritos -->
+
+        <h2>Colores Preferidos ❤️ </h2>
+
+         <section class="Galeria_guardada" id="Galeria_guardada">
+
+                <div class="caja-fav" id="caja1">
+                    <div class="swatch__colorFav" id="swatch__colorFav"> </div>  
+                    <div class="control_pegado" id="control_pegado">                        
+                        <input type="text" class="inputPegado" placeholder="Pega aquí tu código" />
+                        <button class="botonMostrar">Mostrar</button>
+                        <button class="botonQuitar">❌</button>        
+                    </div>
+                </div>  
+
+                <div class="caja-fav" id="caja2">
+                    <div class="swatch__colorFav" id="swatch__colorFav"> </div>
+                    <div class="control_pegado" id="control_pegado">
+                        <input type="text" class="inputPegado" placeholder="Pega aquí tu código" />
+                        <button class="botonMostrar">Mostrar</button>
+                        <button class="botonQuitar">❌</button>
+                    </div>
+                </div>
+
+                <div class="caja-fav" id="caja3">
+                    <div class="swatch__colorFav"> </div>
+                    <div class="control_pegado" id="control_pegado">
+
+                        <input type="text" class="inputPegado" placeholder="Pega aquí tu código" />
+                        <button class="botonMostrar">Mostrar</button>
+                        <button class="botonQuitar">❌</button>
+                    </div>
+                </div>
+         </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Colorfly Studio - ProyectoM1_Tamara Quaglia </p>
+             <ul class="nav__links">
+                <li><a class="nav__link" href="#generar">Generador</a></li>
+                <li><a class="nav__link" href="#Galeria_guardada">Guardadas</a></li>
+             </ul>         
+            
+
+         </footer>
+        <script src="/js/index.js" defer></script>
+    </body>
+</html>
